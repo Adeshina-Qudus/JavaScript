@@ -8,4 +8,3 @@ function checkCreditLimit(accountNumber, beginningBalance, totalCharges, totalCr
         console.log("Credit limit not exceeded");
     }
 }
-console.log(checkCreditLimit("0909090",0,65,7643,34))

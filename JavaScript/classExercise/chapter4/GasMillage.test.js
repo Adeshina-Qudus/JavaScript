@@ -1,4 +1,4 @@
-import { milesPerGallonObtain } from "./GasMillage";
+const { milesPerGallonObtain } = require("./GasMillage");
 
 test("milesPerGallonObtain",()=>{
     let milesDriven = 100;
@@ -6,4 +6,3 @@ test("milesPerGallonObtain",()=>{
     let mgp = milesPerGallonObtain(milesDriven,gallonUsed);
     expect(mgp).toBe(2);
 })
-
