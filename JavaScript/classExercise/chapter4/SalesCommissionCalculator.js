@@ -1,5 +1,5 @@
 let prompt = require("prompt-sync")();
-const Api = ()=>{
+const api = ()=>{
     let input = prompt("how much merchandise do you sell this week : ");
     let sales = parseInt(input);
     let salary = salesCommissionCalculator(sales);
@@ -12,4 +12,4 @@ const salesCommissionCalculator = (sales) =>{
       return salary;
 }
 module.exports = {salesCommissionCalculator}
-console.log(Api())
+console.log(api())
