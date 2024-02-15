@@ -1,13 +1,13 @@
 const turnArrayElementToZero = (input)=>{
-    let holdCountOfZeroElement = -1
+    let holdIndex = -1
     for(let eachIndex = 0 ; eachIndex < input.length ; eachIndex++){
         for(let eachElement = 0; eachElement < input[eachElement].length; eachElement++){
             if(input[eachElement][eachElement] == 0){
-                holdCountOfZeroElement = eachElement;
+                holdIndex = eachElement;
             }
         }
-        turnElementToZero(input,holdCountOfZeroElement)
-    }
+        turnElementToZero(input,holdIndex)
+    } 
     return input
 }
 const turnElementToZero = (input,holdCountOfZeroElement) =>{
