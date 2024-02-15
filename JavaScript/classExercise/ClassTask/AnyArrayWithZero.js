@@ -1,8 +1,8 @@
 const turnArrayElementToZero = (input)=>{
     let holdCountOfZeroElement = -1
-    for(let eachElement = 0 ; eachElement < input.length ; eachElement++){
-        for(let allElement = 0; allElement < input[eachElement].length; allElement++){
-            if(input[eachElement][allElement] == 0){
+    for(let eachIndex = 0 ; eachIndex < input.length ; eachIndex++){
+        for(let eachElement = 0; eachElement < input[eachElement].length; eachElement++){
+            if(input[eachElement][eachElement] == 0){
                 holdCountOfZeroElement = eachElement;
             }
         }
@@ -10,15 +10,13 @@ const turnArrayElementToZero = (input)=>{
     }
     return input
 }
-
 const turnElementToZero = (input,holdCountOfZeroElement) =>{
-    for(let eachElement = 0 ; eachElement < input.length ; eachElement++){
-        for(let allElement = 0; allElement < input[eachElement].length; allElement++){
-            if(eachElement === holdCountOfZeroElement){
-                input[eachElement][allElement] = 0;
+    for(let eachIndex = 0 ; eachIndex < input.length ; eachIndex++){
+        for(let eachElement = 0; eachElement < input[eachIndex].length; eachElement++){
+            if(eachIndex == holdCountOfZeroElement){
+                input[eachIndex][eachElement] = 0;
             }
         }
     }
 }
-
-console.log(turnArrayElementToZero([[4,5],[0,7]]))
+module.exports = {turnArrayElementToZero}
