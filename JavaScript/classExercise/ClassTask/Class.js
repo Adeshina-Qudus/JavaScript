@@ -15,5 +15,4 @@ class Person{
     getAge(){
         return this.age
     }
-
 }
